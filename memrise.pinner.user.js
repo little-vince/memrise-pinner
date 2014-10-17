@@ -4,7 +4,7 @@
 // @match          http://www.memrise.com/home/
 // @version        0.1.2
 // @updateURL      Automatic updating is disabled, to avoid overwriting user configurations
-// @downloadURL    https://raw.githubusercontent.com/little-vince/memrise-pinner/master/memrise.planner.user.js
+// @downloadURL    https://raw.githubusercontent.com/little-vince/memrise-pinner/master/memrise.pinner.user.js
 // @grant          none
 // ==/UserScript==
 
