@@ -1,4 +1,4 @@
-Memrise Courses Pinner
+Memrise Course Pinner
 =====================================
 
 This is an updated version of the [Memrise Home Page - Pin Extra 
