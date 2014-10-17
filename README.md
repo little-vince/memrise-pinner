@@ -42,3 +42,9 @@ these directions.
 ### For other setups
 I haven't tested script editing on other setups yet, but it should follow the 
 same general steps as above. Give it a try.
+
+### More Userscripts
+Check out my other userscripts:
+* [Tumblr MP3 Downloader](https://github.com/little-vince/tumblr-download)
+* [Google Play Music Close 
+  Prompt](https://github.com/little-vince/google-music-prompt)
