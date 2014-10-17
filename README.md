@@ -2,9 +2,9 @@ Memrise Course Pinner
 =====================================
 
 This is an updated version of the [Memrise Home Page - Pin Extra 
-Courses](http://userscripts.org/scripts/show/174435.html) userscript 
-originally by [carpiediem](http://userscripts.org/users/523128.html). Since 
-Since [userscripts.org](http://userscripts.org) has been down for a while and 
+Courses](http://userscripts.org/scripts/show/174435.html) userscript originally 
+by [carpiediem](http://userscripts.org/users/523128.html). Since 
+[userscripts.org](http://userscripts.org) has been down for a while and 
 Carpiediem's version hasn't been updated since July 2013, I've updated it to 
 fix the display issues caused by Memrise's latest changes to the site.
 
