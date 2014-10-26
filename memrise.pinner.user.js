@@ -2,7 +2,7 @@
 // @name           Memrise Course Pinner
 // @description    By configuring the code in the user script, more courses can be shown on the home page (in addition to the three already allowed)
 // @match          http://www.memrise.com/home/
-// @version        0.1.3
+// @version        0.1.2b
 // @updateURL      Automatic updating is disabled, to avoid overwriting user configurations
 // @downloadURL    https://raw.githubusercontent.com/little-vince/memrise-pinner/master/memrise.pinner.user.js
 // @grant          none
