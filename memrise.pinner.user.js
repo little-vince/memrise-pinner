@@ -27,7 +27,7 @@ var onLoad = function($) {
         if (val.percent_complete<100) {
           h+='      <a href="/course/next/'+val.id+'" class="btn btn-success" data-placement="top" title="Learn new items">&nbsp; Plant&nbsp;</a>';
         }
-        h += '      <a href="'+val.url+'garden/water/" class="btn btn-primary" data-placement="top" title="Review items">Water ('+val.num_ready_to_water+')</a>';
+        h += '      <a href="'+val.url+'garden/water/" class="btn btn-primary" data-placement="top" title="Review items">Review ('+val.num_ready_to_water+')</a>';
         h += '    </div>';
         h += '</div>';
         if (addBelowPinned) $(".pinned-courses").append(h);
