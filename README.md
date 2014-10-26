@@ -43,7 +43,18 @@ these directions.
 I haven't tested script editing on other setups yet, but it should follow the 
 same general steps as above. Give it a try.
 
-### More Userscripts
+Changelog
+---------
+
+#### 0.1.2 (141017)
+* Fixed display issue caused by Memrise update
+* Renamed 'Water' to 'Review' to reflect changes by Memrise. (0.1.2b)
+
+#### 0.1.1 (130728)
+* Forked original source code
+
+More Userscripts
+----------------
 Check out my other userscripts:
 * [Tumblr MP3 Downloader](https://github.com/little-vince/tumblr-download)
 * [Google Play Music Close 
