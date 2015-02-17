@@ -1,6 +1,8 @@
 Memrise Course Pinner
 =====================================
 
+**Turns out Memrise has removed the course pin limit making this userscript obsolete. Oops!**
+
 This is an updated version of the [Memrise Home Page - Pin Extra 
 Courses](http://userscripts.org/scripts/show/174435.html) userscript originally 
 by [carpiediem](http://userscripts.org/users/523128.html). Since 
