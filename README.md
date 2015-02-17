@@ -46,6 +46,9 @@ same general steps as above. Give it a try.
 Changelog
 ---------
 
+#### 0.1.3 (150218)
+* Fixed display issue caused by Memrise update
+
 #### 0.1.2 (141017)
 * Fixed display issue caused by Memrise update
 * Renamed 'Water' to 'Review' to reflect changes by Memrise. (0.1.2b)
