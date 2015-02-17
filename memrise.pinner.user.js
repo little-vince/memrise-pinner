@@ -31,10 +31,18 @@ var onLoad = function($) {
         h += '   </div>'; //detail
         h += '  </div>'; //left side
         h += '  <div class="right-side">';
-        h += '     <div class="goal-setter" data-target="'+val.id+'" id="goal-setter-'+val.id+'"></div>';
+        if (val.percent_complete == 100) {
+            h += '<div class="goal-setter done" id="goal-setter-'+val.id+'"><div class="course-done"><p>Course Complete!</p></div></div>';
+        } else {
+            h += '     <div class="goal-setter " id="goal-setter-'+val.id+'"></div>';
+        }
         h += '    <div class="course-actions" data-role="course-actions">';
         h += '        <div class="btn-group">';
-        h += '      <a href="'+val.url+'garden/water/" class="btn btn-primary last-child" data-placement="top" title="Review items">Review ('+val.num_ready_to_water+')</a>';
+        if (val.num_ready_to_water > 0) {
+            h += '      <a href="'+val.url+'garden/water/" class="btn btn-primary last-child" data-placement="top" title="Review items">Review ('+val.num_ready_to_water+')</a>';
+        } else {
+            h += '      <a href="'+val.url+'garden/water/" class="btn btn-default last-child" data-placement="top" title="Review items">Review</a>';
+        }
         h += '        </div>';
         h += '    </div>';
         h += '  </div>'; //right side
