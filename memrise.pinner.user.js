@@ -18,17 +18,26 @@ var onLoad = function($) {
       if (($.inArray(val.id, addedCourses)!=-1 || addedCourses.length==0) && $.inArray(val.id, alreadyPinned)==-1) {
         var h = "";
         h += '<div class="course-progress-box pinned " data-role="course-progress-box" data-course-id="'+val.id+'" data-course-name="'+val.name+'" data-pinned="true">';
-        h += '    <img class="course-photo" src="'+val.photo_small+'" alt="" title="Pinned by userscript.  Edit the userscript to change or remove.">';
+        h += '  <div class="left_side">';
+        h += '    <div class="img_crop"><img class="course-photo" src="'+val.photo_small+'" alt="" title="Pinned by userscript.  Edit the userscript to change or remove."></div>';
         h += '    <div class="detail">';
         h += '      <div class="title" title="'+val.name+'"><a href="'+val.url+'">'+val.name+'</a></div>';
-        h += '      <div class="progress" data-placement="bottom" title="'+val.percent_complete+'% in long term memory"><span class="bar-success bar-abs bar" style="width:'+val.percent_complete+'%;"></span></div>';
+        h += '      <div class="stats">';
+        h += '          <span class="stat words_learned">';
+        h += '              <span class="number">X / X</span> words learned </span>';
+        h += '          <span class="stat ltm">';
+        h += '              <span class="number">X</span> in long term memory </span>';
+        h += '     </div>'; //stats
+        h += '   </div>'; //detail
+        h += '  </div>'; //left side
+        h += '  <div class="right-side">';
+        h += '     <div class="goal-setter" data-target="'+val.id+'" id="goal-setter-'+val.id+'"></div>';
+        h += '    <div class="course-actions" data-role="course-actions">';
+        h += '        <div class="btn-group">';
+        h += '      <a href="'+val.url+'garden/water/" class="btn btn-primary last-child" data-placement="top" title="Review items">Review ('+val.num_ready_to_water+')</a>';
+        h += '        </div>';
         h += '    </div>';
-        h += '    <div class="course-actions btn-group" data-role="course-actions">';
-        if (val.percent_complete<100) {
-          h+='      <a href="/course/next/'+val.id+'" class="btn btn-success" data-placement="top" title="Learn new items">&nbsp; Plant&nbsp;</a>';
-        }
-        h += '      <a href="'+val.url+'garden/water/" class="btn btn-primary" data-placement="top" title="Review items">Review ('+val.num_ready_to_water+')</a>';
-        h += '    </div>';
+        h += '  </div>'; //right side
         h += '</div>';
         if (addBelowPinned) $(".pinned-courses").append(h);
         else                $(".pinned-courses").prepend(h);
