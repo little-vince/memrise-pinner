@@ -11,6 +11,7 @@
 var onLoad = function($) {
   var addBelowPinned = true;
   var addedCourses = [];
+  var hideAds = true;
   
   $.getJSON('http://www.memrise.com/api/course/learning/?with_progress=true', function(data) {
     var alreadyPinned = [parseInt($(".pinned").eq(0).attr("data-course-id")), parseInt($(".pinned").eq(1).attr("data-course-id")), parseInt($(".pinned").eq(2).attr("data-course-id"))];
@@ -52,6 +53,12 @@ var onLoad = function($) {
       }
     });
   });
+  if (hideAds) {
+    var els = [".logo-extra.btn.btn-pink.btn-large", ".btn.btn-pink.disabled"];
+    $.each(els, function(index, value) {
+        $(value).hide();
+    }
+  }
 };
 
 var injectWithJQ = function(f) {
